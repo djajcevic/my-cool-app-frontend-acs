@@ -1,0 +1,17 @@
+#$schema: https://json.schemastore.org/catalog-info.json
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-cool-app-frontend
+  annotations:
+    github.com/project-slug: djajcevic/my-cool-app-frontend-acs
+  tags:
+    - react
+    - js
+spec:
+  type: website
+  lifecycle: development
+  owner: demo-team
+  system: demo
+  dependsOn:
+    - component:default/my-cool-app
